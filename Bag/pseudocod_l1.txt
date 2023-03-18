@@ -1,0 +1,25 @@
+subalgorithm valid():
+//valid
+    if index_arr < bag.len-myiter && index_arr >= 0 then
+        return true
+     end if
+    return false
+end-subalgorithm
+
+subalgorithm first:
+//first
+    index_arr <- myiterator
+    index_freq <- myiterator
+    tmp_freq <- 1
+end-subalgorithm
+
+sualgorithm next():
+//next
+    if bag.freq[index_arr] = tmp_freq  then
+	if valid() then                 
+                           index_arr <- index_arr + myiterator;
+                           index_freq <- index_freq + myiterator;
+                           tmp_freq <- 1;
+    else tmp_freq<-tmp_freq+myiter
+    end if
+end-subalgorithm
